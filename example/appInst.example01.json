@@ -1,0 +1,37 @@
+{
+  "packageManager": [
+  {"id": 0, "title": "Any",	"sudo" : true,  "instAtEnd": false, "cmd": "Matches any (first) avaiable package manager ordered by id", "param": ""},
+  {"id": 1, "title": "Pacman",	"sudo" : true,  "instAtEnd": false, "cmd": "pacman" , "param": "--noconfirm --needed -S"},
+  {"id": 2, "title": "Yaourt",	"sudo" : false, "instAtEnd": true,  "cmd": "yaourt" , "param": "--noconfirm --needed -S"},
+  {"id": 3, "title": "Apt",	"sudo" : true,  "instAtEnd": false, "cmd": "apt-get", "param": "-y install"}
+],
+
+"categories": [
+
+  {"category": "Web", "subcategories": [
+	{  "title": "Web", "packages": [
+		{"type": 0, "title" : "firefox thunderbird pidgin" },
+		{"type": 1, "title" : "chromium" },
+		{"type": 3, "title" : "chromium-browser" }
+        ]}
+  ]},
+
+  {"category": "Dev", "subcategories": [
+	{  "title": "Java", "packages": [
+		{"type": 1, "title" : "jdk7-openjdk jre7-openjdk jdk8-openjdk jre8-openjdk" },
+		{"type": 3, "title" : "openjdk-8-jdk openjdk-8-jre" }
+        ]},
+	{  "title": "QT", "packages": [
+		{"type": 1, "title" : "qt5-base qtcreator qt5-tools" },
+		{"type": 3, "title" : "qtcreator qt5-default" }
+        ]}
+  ]},
+
+  {"category": "Language Packs", "subcategories": [
+	{  "title": "German", "packages": [
+		{"type": 1, "title" : "firefox-i18n-de thunderbird-i18n-de libreoffice-fresh-de" },
+		{"type": 3, "title" : "language-pack-de chromium-browser-l10n firefox-locale-de thunderbird-locale-de" }
+        ]}
+  ]}
+
+]}
